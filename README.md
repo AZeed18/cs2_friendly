@@ -20,7 +20,6 @@ This mod aims to remove all terrorism and reduce violence
 - [ ] Hostage mode
 - [ ] Remove blood decals
 - [ ] Disable C4 explosion (MetaMod server plugin)
-- [ ] Use Batch script for Windows
 
 # Instructions
 
@@ -62,3 +61,4 @@ All decompilation of Valve assets done using [Source 2 Viewer](https://s2v.app/)
 |`assets/broadcast.svg`|`pak01.vpk:panorama/images/icons/ui/broadcast.vsvg_c`|
 |`assets/wifi-1020-svgrepo-com.svg`|Public Domain|
 |`assets/multimeter-multimeter-svgrepo-com.svg`|CC0|
+
