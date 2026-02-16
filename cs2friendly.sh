@@ -14,8 +14,6 @@ if [ "$(crc32 steam.inf)" != "$(cat friendly.crc32 2>/dev/null)" ]; then
 
 	sed -E 's/^(\s*Game\s)(csgo\s*)$/\1csgo\/friendly\n\1\2/' gameinfo.gi.bak > gameinfo.gi
 	echo "Added mod to gameinfo.gi"
-
-	echo -n 'Press Enter to continue...'; read
 fi
 
 explorer steam://launch/730
