@@ -29,10 +29,12 @@ This mod aims to remove all terrorism and reduce violence
 1. (Windows) Download [busybox64.exe](https://frippery.org/busybox/#:~:text=Downloads) and move it to `{CS2 installation folder}\game\csgo`
 1. Download repository
 1. Move all mod files files to `{CS2 installation folder}\game\csgo`
-1. Use the `cs2friendly.bat` (Windows) or `cs2friendly.sh` (Linux) to run the game
+1. Use `cs2friendly.bat` (Windows) or `cs2friendly.sh` (Linux) to run the game
 
-> [!NOTE]
-> `cs2friendly.sh` is a simple interactive script that:
+> [!TIP]
+> `cs2friendly.bat` is a wrapper script that executes `cs2friendly.sh` using BusyBox
+> 
+> `cs2friendly.sh` is a simple interactive Unix shell script that:
 > - Installs the mod if not installed or if game is updated
 > - Makes backup of `game/csgo/pak01_dir.vpk` (`pak01_dir.vpk.bak`) and `game/bin/vpk.signatures` (`vpk.signatures.bak`) before installing
 > - Launches the game using Steam
@@ -63,5 +65,6 @@ All decompilation of Valve assets done using [Source 2 Viewer](https://s2v.app/)
 |`assets/broadcast.svg`|`pak01.vpk:panorama/images/icons/ui/broadcast.vsvg_c`|
 |`assets/wifi-1020-svgrepo-com.svg`|Public Domain|
 |`assets/multimeter-multimeter-svgrepo-com.svg`|CC0|
+
 
 
