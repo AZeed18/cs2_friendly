@@ -1,6 +1,8 @@
+# CS2 Friendly Mod
+
 This mod aims to remove all terrorism and reduce violence
 
-# Features
+## Features
 
 - Replaces default terrorists with counter-terrorists
 - Modifies terrorists with counter-terrorists text (English-only)
@@ -15,13 +17,13 @@ This mod aims to remove all terrorism and reduce violence
 ![](images/20260216063150_1.jpg)
 ![](images/20260216062932_1.jpg)
 
-# Todo
+## Todo
 
 - [ ] Hostage mode
 - [ ] Remove blood decals
 - [ ] Disable C4 explosion (MetaMod server plugin)
 
-# Instructions
+## Instructions
 
 1. Install [VPKEdit](https://github.com/craftablescience/VPKEdit/blob/main/INSTALL.md)
 1. (Windows) Download [busybox64.exe](https://frippery.org/busybox/#:~:text=Downloads) and move it to `{CS2 installation folder}\game\csgo`
@@ -38,11 +40,11 @@ This mod aims to remove all terrorism and reduce violence
 > [!NOTE]
 > You can't join matchmaking or any secure servers, but joining secure community servers with `sv_pure 0` should be possible but not in current CS2 update
 
-# Attribution
+## Attribution
 
 All decompilation of Valve assets done using [Source 2 Viewer](https://s2v.app/)
 
-## Mod Assets
+### Mod Assets
 
 | Asset | License/Source |
 |-------|----------------|
@@ -54,11 +56,12 @@ All decompilation of Valve assets done using [Source 2 Viewer](https://s2v.app/)
 |`panorama/images/map_icons/screenshots/1080p/default_psd.png`|`pak01.vpk:panorama/images/map_icons/screenshots/1080p/random_png.vtex_c`|
 |Others|Assets representing nothing<ul><li>`pak01.vpk:models/props_doors/null.vmdl_c`<li>`pak01.vpk:sounds/common/null.vsnd_c`<li>`pak01.vpk:materials/models/props_doors/testnull.vmat_c`|
 
-## Development Assets
+### Development Assets
 
 | Asset | License/Source |
 |-------|----------------|
 |`assets/broadcast.svg`|`pak01.vpk:panorama/images/icons/ui/broadcast.vsvg_c`|
 |`assets/wifi-1020-svgrepo-com.svg`|Public Domain|
 |`assets/multimeter-multimeter-svgrepo-com.svg`|CC0|
+
 
