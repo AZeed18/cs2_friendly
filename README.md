@@ -28,19 +28,15 @@ This mod aims to remove all terrorism and reduce violence
 1. Install [VPKEdit](https://github.com/craftablescience/VPKEdit/blob/main/INSTALL.md)
 1. (Windows) Download 64-bit [BusyBox](https://frippery.org/busybox) ([direct link](https://frippery.org/files/busybox/busybox64.exe)) and move it to `{CS2 installation folder}\game\csgo`
 1. Download repository
-1. Move all mod files files to `{CS2 installation folder}\game\csgo`
-1. Use `cs2friendly.bat` (Windows) or `cs2friendly.sh` (Linux) to run the game
+1. Move `friendly` folder and `cs2friendly` scripts to `{CS2 installation folder}\game\csgo`
+1. Use `cs2friendly.bat` (Windows) or `cs2friendly.sh` (Linux) to run the game, which automatically installs the mod if not installed or if game has updated and then launches the game using Steam
 
 > [!TIP]
-> `cs2friendly.bat` is a wrapper script that executes `cs2friendly.sh` using BusyBox
-> 
-> `cs2friendly.sh` is a simple interactive Unix shell script that:
-> - Installs the mod if not installed or if game is updated
-> - Makes backup of `game/csgo/pak01_dir.vpk` (`pak01_dir.vpk.bak`) and `game/bin/vpk.signatures` (`vpk.signatures.bak`) before installing
-> - Launches the game using Steam
+> `cs2friendly.bat` is only a wrapper script that executes `cs2friendly.sh` using BusyBox for Windows users
 
 > [!NOTE]
-> You can't join matchmaking or any secure servers, but joining secure community servers with `sv_pure 0` should be possible but not in current CS2 update
+> - Script makes backups of `pak01_dir.vpk`, `gameinfo.gi`, `game/bin/win64/vpk.signatures` (as `{filename}.bak`) before installing
+> - You can't join matchmaking or any secure servers, but joining secure community servers with `sv_pure 0` should be possible but not in current CS2 update
 
 ## Attribution
 
@@ -65,6 +61,3 @@ All decompilation of Valve assets done using [Source 2 Viewer](https://s2v.app/)
 |`assets/broadcast.svg`|`pak01.vpk:panorama/images/icons/ui/broadcast.vsvg_c`|
 |`assets/wifi-1020-svgrepo-com.svg`|Public Domain|
 |`assets/multimeter-multimeter-svgrepo-com.svg`|CC0|
-
-
-
