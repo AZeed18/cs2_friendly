@@ -26,7 +26,7 @@ This mod aims to remove all terrorism and reduce violence
 ## Instructions
 
 1. Install [VPKEdit](https://github.com/craftablescience/VPKEdit/blob/main/INSTALL.md)
-1. (Windows) Download [busybox64.exe](https://frippery.org/busybox/#:~:text=Downloads) and move it to `{CS2 installation folder}\game\csgo`
+1. (Windows) Download 64-bit [BusyBox](https://frippery.org/busybox) ([direct link](https://frippery.org/files/busybox/busybox64.exe)) and move it to `{CS2 installation folder}\game\csgo`
 1. Download repository
 1. Move all mod files files to `{CS2 installation folder}\game\csgo`
 1. Use `cs2friendly.bat` (Windows) or `cs2friendly.sh` (Linux) to run the game
