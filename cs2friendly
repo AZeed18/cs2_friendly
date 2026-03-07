@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+cd "$(dirname "$0")"
+
+if [ "$(ls C:/)" ]; then
+	windows=yes
+else
+	windows=
+fi
+
+if [ "$(crc32 game/csgo/steam.inf)" != "$(cat game/friendly/steam.inf.crc32 2>/dev/null)" ]; then
+	crc32 game/csgo/steam.inf > game/friendly/steam.inf.crc32
+
+	cp game/csgo/pak01_dir.vpk game/friendly/pak01_dir.vpk.bak
+	mv game/csgo/gameinfo.gi game/friendly/gameinfo.gi.bak
+	[ $windows ] && mv game/bin/win64/vpk.signatures game/friendly/vpk.signatures.bak
+
+	echo "Installing mod..."
+
+	[ $windows ] && vpkeditcli="C:\Program Files\VPKEdit\vpkeditcli.exe"
+	[ ! $windows ] && vpkeditcli=vpkeditcli
+
+	cat game/friendly/friendly.txt | sed -n 's/\.\//--remove-file /p' | xargs -n200 "$vpkeditcli" game/csgo/pak01_dir.vpk >/dev/null
+	echo "Removed assets references"
+
+	sed -E 's/^(\s*Game\s)(csgo\s*)$/\1friendly\n\1\2/' game/friendly/gameinfo.gi.bak > game/csgo/gameinfo.gi
+	echo "Added mod to gameinfo.gi"
+fi
+
+[ "$1" != "install" ] && [ $windows ] && explorer steam://launch/730
+[ "$1" != "install" ] && [ ! $windows ] && open steam://launch/730

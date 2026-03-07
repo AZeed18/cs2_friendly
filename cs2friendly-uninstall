@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ -e game/friendly/steam.inf.crc32 ]; then
+	mv game/friendly/pak01_dir.vpk.bak game/csgo/pak01_dir.vpk &&
+	mv game/friendly/gameinfo.gi.bak game/csgo/gameinfo.gi &&
+	mv game/friendly/vpk.signatures.bak game/bin/win64/vpk.signatures &&
+	rm steam.inf.crc32
+fi
